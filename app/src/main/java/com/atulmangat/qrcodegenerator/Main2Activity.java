@@ -129,9 +129,9 @@ public class Main2Activity extends AppCompatActivity {
 
     public void checkboxW(View view) {
         if (((CheckBox) view).isChecked())
-            v=1;
+            w=1;
         else
-            v=0;
+            w=0;
     }
 
     public void checkboxY(View view) {
