@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atulmangat.qrcodegenerator.Main2Activity"
+    android:orientation="vertical">
+     <LinearLayout
+         android:gravity="center|top"
+         android:layout_weight="2"
+         android:paddingTop="10dp"
+         android:paddingLeft="10dp"
+         android:layout_gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+    <EditText
+
+        android:id="@+id/Edittxt"
+        android:hint="     Enter Your Name Here       "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"/>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Age ?"/>
+        <RadioButton
+            android:onClick="Age"
+            android:id="@+id/zero"
+            android:text= "9or_less "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:onClick="Age"
+            android:id="@+id/ten"
+            android:text="10to15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Age"
+            android:id="@+id/sixteen"
+            android:text="16to40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:onClick="Age"
+            android:id="@+id/fourty"
+            android:text="above40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Gender ?"/>
+        <RadioButton
+
+            android:onClick="Gender"
+            android:id="@+id/male"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Gender"
+            android:id="@+id/female"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Traning Type :"/>
+        <RadioButton
+
+            android:onClick="Traning"
+            android:text=" A "
+            android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Traning"
+            android:text=" B "
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Traning"
+            android:text=" C "
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Traning"
+            android:text=" D "
+            android:id="@+id/D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       ><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Exercise Tye :"/>
+
+        <RadioButton
+
+            android:onClick="Exercise"
+            android:id="@+id/P"
+            android:text=" P "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Exercise"
+            android:id="@+id/Q"
+            android:text=" Q "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Exercise"
+            android:id="@+id/rr"
+            android:text=" R "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="Exercise"
+            android:id="@+id/S"
+            android:text=" S "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_weight="2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="5. Sports :"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/V"
+        android:onClick="checkboxV"
+        android:text=" V "/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkboxW"
+        android:id="@+id/W"
+        android:text="W"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkboxX"
+        android:id="@+id/X"
+        android:text="X" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkboxY"
+        android:id="@+id/Y"
+          android:text=" Y "/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkboxZ"
+        android:id="@+id/Z"
+        android:text=" Z "/>
+     </LinearLayout>
+
+    <Button
+        android:layout_weight=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:onClick="GenerateQR"
+        android:text="View Code/Generate QR"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
