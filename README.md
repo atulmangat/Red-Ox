@@ -1,4 +1,4 @@
-# Simplify
+# Simplify-Registration
 A Android App to simplify registration process. 
 User can enter their name, age, gender, etc.
 It then generates a QR code using the details entered by user. 
